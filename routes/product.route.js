@@ -6,6 +6,8 @@ const product_controller = require('../controllers/product.controller');
 
 //Simple test URL to check that all of our files are communicating correctly.
 router.get('/test', product_controller.test);
-router.get('/klk', product_controller.keloke); 
+
+//Expected path to CREATE
+router.post('/create', product_controller.product_create);
 
 module.exports = router;
